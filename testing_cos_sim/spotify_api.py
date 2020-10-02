@@ -134,8 +134,8 @@ class SpotifyAPI(object):
 
 ## FOR TESTING
 def main():
-    client_id = '042f6a5ce691471d8e4da836ae43db97'
-    client_secret = 'aebc2f4fcdc54410b4aedb10f8bb3f5d'
+    client_id = 'CLIENT_ID'
+    client_secret = 'CLIENT_SECRET'
     spotify = SpotifyAPI(client_id,client_secret)
     spotify.perform_auth()
 
