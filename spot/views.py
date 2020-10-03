@@ -5,6 +5,7 @@ import spotipy
 import spotipy.util as util
 from spotipy import oauth2
 from django.views.generic.base import RedirectView
+import os
 
 
 scope = " ".join(
@@ -13,8 +14,8 @@ scope = " ".join(
     ]
 )
 print(scope)
-SPOTIPY_CLIENT_ID = 'CLIENT_ID'
-SPOTIPY_CLIENT_SECRET = 'CLIENT_SECRET'
+SPOTIPY_CLIENT_ID = ' 042f6a5ce691471d8e4da836ae43db97'
+SPOTIPY_CLIENT_SECRET = os.environ.get('SPOTIFY_SECRET')
 SPOTIPY_REDIRECT_URI = 'http://localhost:8000/dashboard'
 username=''
 
